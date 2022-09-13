@@ -10,13 +10,15 @@
         android:id="@+id/question"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="How is your mood? (1 = terrible, 4 = amazing)"
+        android:text="How is your mood?\n(1 = amazing, 4 = terrible)"
+        android:textSize="@dimen/textViewSize"
+
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.500"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
+        app:layout_constraintVertical_bias="0.101"
+        android:fontFamily="@font/fontttt"/>
 
     <RadioGroup
         android:id="@+id/radioGroup"
@@ -25,34 +27,47 @@
         android:layout_centerInParent="true"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.499"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.202">
+        app:layout_constraintVertical_bias="0.643"
+        >
 
         <RadioButton
             android:id="@+id/radio_one"
             android:layout_width="@dimen/buttonWidth"
             android:layout_height="@dimen/buttonHeight"
-            android:text="One" />
+            android:fontFamily="@font/fontttt"
+            android:onClick="radioClick"
+            android:text="One"
+            android:textSize="@dimen/textViewSize" />
 
         <RadioButton
             android:id="@+id/radio_two"
             android:layout_width="@dimen/buttonWidth"
             android:layout_height="@dimen/buttonHeight"
-            android:text="Two" />
+            android:onClick="radioClick"
+            android:text="Two"
+            android:textSize="@dimen/textViewSize"
+            android:fontFamily="@font/fontttt"/>
 
         <RadioButton
             android:id="@+id/radio_three"
             android:layout_width="@dimen/buttonWidth"
             android:layout_height="@dimen/buttonHeight"
-            android:text="Three" />
+            android:onClick="radioClick"
+            android:text="Three"
+            android:textSize="@dimen/textViewSize"
+            android:fontFamily="@font/fontttt"/>
 
         <RadioButton
             android:id="@+id/radio_four"
             android:layout_width="@dimen/buttonWidth"
             android:layout_height="@dimen/buttonHeight"
-            android:text="Four" />
+            android:onClick="radioClick"
+            android:text="Four"
+            android:textSize="@dimen/textViewSize"
+            android:fontFamily="@font/fontttt"/>
     </RadioGroup>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
